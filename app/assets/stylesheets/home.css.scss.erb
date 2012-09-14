@@ -5,9 +5,42 @@
 
 div.next_icon {
     background-image:url("<%= asset_path 'icons/gallery_icons/gallery_next.png' %>");
+    z-index: 100;
+    top: 100px;
+    right: 0;
+    position: absolute;
+    height: 128px;
+    width: 128px;
 }
 
 div.prev_icon {
+    z-index: 100;
+    top: 100px;
+    left: 0;
+    position: absolute;
+    height: 128px;
+    width: 128px;
     background-image:url("<%= asset_path 'icons/gallery_icons/gallery_prev.png' %>");
 }
 
+div.hotel_photo_gallery {
+    position: relative;
+    height: auto;
+}
+
+.bottom_description {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index:100;
+    color: white;
+    text-align: center;
+}
+
+div.gallery_description {
+    height: 50px;
+    width: 1000px;
+    font-family: arial;
+    font-size: 30px;
+}
