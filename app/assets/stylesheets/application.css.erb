@@ -1,0 +1,173 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hotels_main_container {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    text-align: left;
+    border: 3px solid gray;
+    border-radius: 5px;
+}
+
+.top_menu_links li {
+    float:left;
+    margin:0 0.7em;
+}
+
+.actual_render_area {
+    padding: 15px;
+}
+
+html {
+    background-image: url("<%= asset_path 'total-background.jpg' %>");
+	  min-height: 100%;
+	  min-width: 1024px;
+	  width: 100%;
+	  height: auto;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+}
+
+
+//navigation specific css
+ul.navigation_menu{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+    font-size:14px;
+    width:1020px;
+}
+
+ul.navigation_menu a{
+    text-decoration:none;
+    outline:none;
+}
+
+ul.navigation_menu li{
+    float:left;
+    width:170px;
+    height:85px;
+    position:relative;
+    cursor:pointer;
+}
+
+ul.navigation_menu li > a{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:170px;
+    height:85px;
+    z-index:12;
+    background:transparent url(../images/overlay.png) no-repeat bottom right;
+    -moz-box-shadow:0px 0px 2px #000;
+    -webkit-box-shadow:0px 0px 2px #000;
+    box-shadow:0px 0px 2px #000;
+}
+
+ul.navigation_menu li a img{
+    border:none;
+    position:absolute;
+    width:0px;
+    height:0px;
+    bottom:0px;
+    left:85px;
+    z-index:100;
+    -moz-box-shadow:0px 0px 4px #000;
+    -webkit-box-shadow:0px 0px 4px #000;
+    box-shadow:0px 0px 4px #000;
+}
+
+
+ul.navigation_menu li span.navigation_wrap{
+    position:absolute;
+    top:25px;
+    left:0px;
+    width:170px;
+    height:60px;
+    z-index:15;
+}
+
+ul.navigation_menu li span.navigation_active{
+    position:absolute;
+    background:#111;
+    top:85px;
+    width:170px;
+    height:0px;
+    left:0px;
+    z-index:14;
+    -moz-box-shadow:0px 0px 4px #000 inset;
+    -webkit-box-shadow:0px 0px 4px #000 inset;
+    box-shadow:0px 0px 4px #000 inset;
+}
+
+ul.navigation_menu li span span.navigation_link,
+ul.navigation_menu li span span.navigation_descr,
+ul.navigation_menu li div.navigation_box a{
+    margin-left:15px;
+    text-transform:uppercase;
+    text-shadow:1px 1px 1px #000;
+}
+
+ul.navigation_menu li span span.navigation_link{
+    color:#fff;
+    font-size:24px;
+    float:left;
+    clear:both;
+}
+ul.navigation_menu li span span.navigation_descr{
+    color:#0B75AF;
+    float:left;
+    clear:both;
+    width:155px;
+    font-size:10px;
+    letter-spacing:1px;
+}
+
+ul.navigation_menu li div.navigation_box{
+    display:block;
+    position:absolute;
+    width:170px;
+    overflow:hidden;
+    height:170px;
+    top:85px;
+    left:0px;
+    display:none;
+    background:#000;
+    z-index: 100;
+}
+ul.navigation_menu li div.navigation_box a{
+    float:left;
+    clear:both;
+    line-height:30px;
+    color:#0B75AF;
+}
+
+
+ul.navigation_menu li div.navigation_box a:first-child{
+    margin-top:15px;
+}
+
+ul.navigation_menu li div.navigation_box a:hover{
+    color:#fff;
+}
+//--------end navigation specific css-----------------
