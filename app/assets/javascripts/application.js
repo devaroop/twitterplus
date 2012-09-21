@@ -62,3 +62,22 @@ $(function() {
              .animate({'top':'25px'},500);
     });
 });
+
+
+
+$(document).ready(function() {
+
+    //blink the text
+    $('.booking_title').each(function() {
+        var elem = $(this);
+        setInterval(function() {
+            if (elem.css('visibility') == 'hidden') {
+                elem.css('visibility', 'visible');
+            } else {
+                elem.css('visibility', 'hidden');
+            }    
+        }, 500);
+    });
+
+
+});

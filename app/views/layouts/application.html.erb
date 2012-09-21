@@ -1,112 +1,109 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Teja Hotels</title>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+      <title>Teja Hotels</title>
+      <%= stylesheet_link_tag    "application", :media => "all" %>
+      <%= javascript_include_tag "application" %>
+      <%= csrf_meta_tags %>
   </head>
   <body>
 
     <div class="hotels_main_container">
       <div class="actual_render_area">
 
-        <ul id="navigation_menu" class="navigation_menu">
+        <div class="header">
+          <ul id="navigation_menu" class="navigation_menu">
 
-          <li>
-            <a href="#">
-              <img src="images/1.jpg" alt=""/>
-              <span class="navigation_active"></span>
-              <span class="navigation_wrap">
-                <span class="navigation_link">Home</span>
-                <span class="navigation_descr">Welcome</span>
-              </span>
-            </a>
-          </li>
+            <li>
+              <a href="#">
+                <img src="images/1.jpg" alt=""/>
+                <span class="navigation_active"></span>
+                <span class="navigation_wrap">
+                  <span class="navigation_link">Home</span>
+                  <span class="navigation_descr">Welcome</span>
+                </span>
+              </a>
+            </li>
 
-          <li>
-            <a href="#">
-              <img src="images/1.jpg" alt=""/>
-              <span class="navigation_active"></span>
-              <span class="navigation_wrap">
-                <span class="navigation_link">Main</span>
-                <span class="navigation_descr">Explore us</span>
-              </span>
-            </a>
-            <div class="navigation_box">
-              <a href="#">Surya Villa</a>
-              <a href="#">Sudarshan</a>
-              <a href="#">Lotus</a>
-            </div>
-          </li>
+            <li>
+              <a href="#">
+                <img src="images/1.jpg" alt=""/>
+                <span class="navigation_active"></span>
+                <span class="navigation_wrap">
+                  <span class="navigation_link">Main</span>
+                  <span class="navigation_descr">Explore us</span>
+                </span>
+              </a>
+              <div class="navigation_box">
+                <a href="#">Surya Villa</a>
+                <a href="#">Sudarshan</a>
+                <a href="#">Lotus</a>
+              </div>
+            </li>
 
-          <li>
-            <a href="#">
-              <img src="images/1.jpg" alt=""/>
-              <span class="navigation_active"></span>
-              <span class="navigation_wrap">
-                <span class="navigation_link">Ambience</span>
-                <span class="navigation_descr">Facilities and Services</span>
-              </span>
-            </a>
-            <div class="navigation_box">
-              <a href="#">Surya Villa</a>
-              <a href="#">Sudarshan</a>
-              <a href="#">Lotus</a>
-            </div>
-          </li>
+            <li>
+              <a href="#">
+                <img src="images/1.jpg" alt=""/>
+                <span class="navigation_active"></span>
+                <span class="navigation_wrap">
+                  <span class="navigation_link">Ambience</span>
+                  <span class="navigation_descr">Facilities and Services</span>
+                </span>
+              </a>
+              <div class="navigation_box">
+                <a href="#">Surya Villa</a>
+                <a href="#">Sudarshan</a>
+                <a href="#">Lotus</a>
+              </div>
+            </li>
 
-          <li>
-            <a href="#">
-              <img src="images/1.jpg" alt=""/>
-              <span class="navigation_active"></span>
-              <span class="navigation_wrap">
-                <span class="navigation_link">Booking</span>
-                <span class="navigation_descr">Reserve your space</span>
-              </span>
-            </a>
-            <div class="navigation_box">
-              <a href="#">Surya Villa</a>
-              <a href="#">Sudarshan</a>
-              <a href="#">Lotus</a>
-            </div>
-          </li>
+            <li>
+              <a href="#">
+                <img src="images/1.jpg" alt=""/>
+                <span class="navigation_active"></span>
+                <span class="navigation_wrap">
+                  <span class="navigation_link">Booking</span>
+                  <span class="navigation_descr">Reserve your space</span>
+                </span>
+              </a>
+              <div class="navigation_box">
+                <a href="#">Surya Villa</a>
+                <a href="#">Sudarshan</a>
+                <a href="#">Lotus</a>
+              </div>
+            </li>
 
-          <li>
-            <a href="#">
-              <img src="images/1.jpg" alt=""/>
-              <span class="navigation_active"></span>
-              <span class="navigation_wrap">
-                <span class="navigation_link">Feedback</span>
-                <span class="navigation_descr">Reach us</span>
-              </span>
-            </a>
-            <div class="navigation_box">
-              <a href="#">Surya Villa</a>
-              <a href="#">Sudarshan</a>
-              <a href="#">Lotus</a>
-            </div>
-          </li>
-          
-        </ul>
+            <li>
+              <a href="#">
+                <img src="images/1.jpg" alt=""/>
+                <span class="navigation_active"></span>
+                <span class="navigation_wrap">
+                  <span class="navigation_link">Feedback</span>
+                  <span class="navigation_descr">Reach us</span>
+                </span>
+              </a>
+              <div class="navigation_box">
+                <a href="#">Surya Villa</a>
+                <a href="#">Sudarshan</a>
+                <a href="#">Lotus</a>
+              </div>
+            </li>
+            
+          </ul>
+        </div> <!-- end header area -->
+        
+        <div class="dynamic_content">
+          <%= yield %>
+        </div>
+        
+        <div class="footer">
+          Copyright Teja Hotels 2012. All rights reserved.
+        </div> <!-- end footer -->
 
+      </div> <!-- end render area -->
 
-        <!-- <div class="top_menu"> -->
-        <!--   <div class="top_menu_links"> -->
-        <!--     <ul> -->
-        <!--       <li> Home </li> -->
-        <!--       <li> Main </li> -->
-        <!--       <li> Accomodation </li> -->
-        <!--       <li> Facilities and Services </li> -->
-        <!--       <li> Tariff </li> -->
-        <!--       <li> Reservation </li> -->
-        <!--     </ul> -->
-        <!--   </div> -->
-        <!-- </div> -->
-
-        <%= yield %>
-      </div><!-- end render area -->
-    </div>
+    </div> <!-- end main container -->
 
   </body>
 </html>

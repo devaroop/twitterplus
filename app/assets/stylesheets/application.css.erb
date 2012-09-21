@@ -25,6 +25,7 @@ ul {
     text-align: left;
     border: 3px solid gray;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .top_menu_links li {
@@ -34,6 +35,7 @@ ul {
 
 .actual_render_area {
     padding: 15px;
+    overflow: hidden;
 }
 
 html {
@@ -42,13 +44,11 @@ html {
 	  min-width: 1024px;
 	  width: 100%;
 	  height: auto;
-	  position: fixed;
 	  top: 0;
 	  left: 0;
 }
 
 
-//navigation specific css
 ul.navigation_menu{
     margin:0;
     padding:0;
@@ -170,4 +170,23 @@ ul.navigation_menu li div.navigation_box a:first-child{
 ul.navigation_menu li div.navigation_box a:hover{
     color:#fff;
 }
-//--------end navigation specific css-----------------
+
+div.header {
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+div.dynamic_content {
+    clear:both;
+    float: left;
+}
+
+div.footer {
+    clear: both;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.23);
+    float: left;
+    width: 100%;
+}
+
