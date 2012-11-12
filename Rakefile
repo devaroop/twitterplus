@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-HotelsTeja::Application.load_tasks
+TwitterPlus::Application.load_tasks

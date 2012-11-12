@@ -18,6 +18,8 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+
+  gem 'twitter-bootstrap-rails'
 end
 
 gem 'jquery-rails'
@@ -35,8 +37,13 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'
 
 gem 'execjs'
 
 gem 'therubyracer'
+
+#For authentication using authlogic
+gem 'authlogic'
+
+gem 'less-rails'
