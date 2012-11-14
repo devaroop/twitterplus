@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-TwitterPlus::Application.load_tasks
+QuickSay::Application.load_tasks

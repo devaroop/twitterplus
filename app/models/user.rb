@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   acts_as_authentic
 
   #relations
-  has_and_belongs_to_many :books
+  has_many :tweets
 
   #validations
   validates :username, :presence => true, :uniqueness => true

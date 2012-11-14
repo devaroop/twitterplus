@@ -1,7 +1,5 @@
-TwitterPlus::Application.routes.draw do
-  resources :tweets
-
-  resources :users, :user_sessions
+QuickSay::Application.routes.draw do
+  resources :users, :user_sessions,:tweets
 
   match 'login' => 'user_sessions#new'
   match 'logout' => 'user_sessions#destroy'
@@ -55,7 +53,7 @@ TwitterPlus::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'home#index'
+  root :to => 'Tweets#index'
 
   # See how all your routes lay out with "rake routes"
 
